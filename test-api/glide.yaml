@@ -1,0 +1,21 @@
+package: svc-spectre-item-rank-api
+import:
+- package: github.com/go-kit/kit
+  version: v0.3.0
+  subpackages:
+  - endpoint
+  - log
+  - transport/http
+- package: github.com/go-sql-driver/mysql
+  version: v1.3
+- package: github.com/gorilla/mux
+  version: v1.3.0
+- package: github.com/jinzhu/gorm
+  version: v1.0
+- package: github.com/newrelic/go-agent
+  version: v2.7.0
+  subpackages:
+  - _integrations/nrgorilla/v1
+- package: golang.org/x/net
+  subpackages:
+  - context
